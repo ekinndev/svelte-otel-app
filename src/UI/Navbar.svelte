@@ -2,7 +2,24 @@
   import Button from "./Button.svelte";
   import HomeShowcase from "../components/Home/HomeShowcase.svelte";
   import NavbarButton from "./NavbarButton.svelte";
+  import { getContext } from "svelte";
+  import { ROUTER } from "svelte-routing/src/contexts";
+  const { activeRoute } = getContext(ROUTER);
   export let showCase = false;
+  let anasayfaMi = false;
+  let hakkimizdaMi = false;
+  let iletisimMi = false;
+  $: if (
+    $activeRoute.route.path == "/" ||
+    $activeRoute.route.path == "anasayfa/"
+  ) {
+    anasayfaMi = true;
+  } else if ($activeRoute.route.path == "hakkimizda/") {
+    hakkimizdaMi = true;
+  } else if ($activeRoute.route.path == "iletisim/") {
+    iletisimMi = true;
+  }
+  $: console.log($activeRoute.route.path);
 </script>
 
 <style>
@@ -37,15 +54,19 @@
       </h1>
       <ul>
         <li>
-          <NavbarButton href="anasayfa" isCurrent={true}>
+          <NavbarButton href="anasayfa" isCurrent={anasayfaMi}>
             Anasayfa
           </NavbarButton>
         </li>
         <li>
-          <NavbarButton href="hakkimizda">Hakkımızda</NavbarButton>
+          <NavbarButton href="hakkimizda" isCurrent={hakkimizdaMi}>
+            Hakkımızda
+          </NavbarButton>
         </li>
         <li>
-          <NavbarButton href="iletisim">İletişim</NavbarButton>
+          <NavbarButton href="iletisim" isCurrent={iletisimMi}>
+            İletişim
+          </NavbarButton>
         </li>
       </ul>
     </div>
