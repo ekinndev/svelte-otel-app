@@ -5,11 +5,11 @@
   import Footer from "../UI/Footer.svelte";
 </script>
 <svelte:head>
-<title>Anasayfa | Svelte Hotel</title>
+<title>Anasayfa | Svelte Otel</title>
 </svelte:head>
 <main>
   <Navbar showCase="{true}"/>
   <HomeInfo />
   <HomeFeature />
-  <Footer>Hotel Svelte &copy; 2020 Tüm Hakları Saklıdır.</Footer>
+  <Footer>Otel Svelte &copy; 2020 Tüm Hakları Saklıdır.</Footer>
 </main>

@@ -19,7 +19,6 @@
   } else if ($activeRoute.route.path == "iletisim/") {
     iletisimMi = true;
   }
-  $: console.log($activeRoute.route.path);
 </script>
 
 <style>
@@ -50,7 +49,7 @@
   <nav id="navbar">
     <div class="container">
       <h1 class="logo">
-        <NavbarButton href="anasayfa">Svelte Hostel</NavbarButton>
+        <NavbarButton href="anasayfa">Svelte Otel</NavbarButton>
       </h1>
       <ul>
         <li>

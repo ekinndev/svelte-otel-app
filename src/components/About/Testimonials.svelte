@@ -18,7 +18,7 @@
 
 <section id="testimonials" class="py-3">
   <div class="container">
-    <h2 class="l-heading">What Our Guests Say</h2>
+    <h2 class="l-heading">Misafirlerimiz ne Söyledi ?</h2>
 
     <Testimonial
       imgSource="./img/person-1.jpg"

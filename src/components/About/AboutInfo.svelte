@@ -22,8 +22,8 @@
     <div class="info-left">
 
       <h1 class="l-heading">
-        <span class="text-primary">About</span>
-        Hotel BT
+        Svelte Otel
+        <span class="text-primary">Hakkında</span>
       </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit
