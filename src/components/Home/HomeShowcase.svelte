@@ -24,6 +24,15 @@
     padding-bottom: 20px;
     line-height: 1.7em;
   }
+  @media screen and (max-width: 768px) {
+    #showcase {
+      height: 100%;
+    }
+    #showcase .showcase-content {
+      padding-top: 70px;
+      padding-bottom: 30px;
+    }
+  }
 </style>
 
 <div id="showcase">

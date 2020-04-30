@@ -71,3 +71,11 @@ p {
   color: #333;
 }
 
+@media screen and (max-width: 768px) {
+  .l-heading {
+    text-align: center;
+  }
+  #contact-info .box {
+    border-bottom: #444 dotted 1px;
+  }
+}

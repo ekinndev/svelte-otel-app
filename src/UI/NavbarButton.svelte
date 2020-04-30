@@ -17,6 +17,12 @@
     text-align: center;
     color: #fff;
   }
+  @media screen and (max-width: 768px) {
+    a {
+      padding: 5px;
+      border-bottom: #444 dotted 1px;
+    }
+  }
 </style>
 
 <a class:current={isCurrent} use:link {href}>

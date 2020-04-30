@@ -43,6 +43,17 @@
   #navbar ul li {
     float: left;
   }
+  @media screen and (max-width: 768px) {
+    #navbar .logo {
+      float: none;
+      text-align: center;
+    }
+
+    #navbar ul,
+    #navbar ul li {
+      float: none;
+    }
+  }
 </style>
 
 <header>

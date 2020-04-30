@@ -17,6 +17,13 @@
   .box i {
     margin-bottom: 10px;
   }
+  @media screen and (max-width: 768px) {
+    .box {
+      float: none;
+      width: 100%;
+    }
+    
+  }
 </style>
 
 <div class="box {bgColor}">

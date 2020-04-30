@@ -23,6 +23,19 @@
   #home-info .info-content p {
     padding-bottom: 30px;
   }
+  @media screen and (max-width: 768px) {
+    #home-info {
+      height: 550px;
+    }
+    #home-info .info-img {
+      display: none;
+    }
+    #home-info .info-content {
+      float: none;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
 </style>
 
 <section id="home-info" class="bg-dark">

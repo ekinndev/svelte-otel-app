@@ -15,6 +15,16 @@
     width: 50%;
     min-height: 100%;
   }
+  @media screen and (max-width: 768px) {
+    #about-info .info-right,
+    #about-info .info-left {
+      float: none;
+      width: 100%;
+    }
+    #about-info .info-right {
+      margin-top: 30px;
+    }
+  }
 </style>
 
 <section id="about-info" class="bg-light py-3">
